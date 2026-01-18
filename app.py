@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 # Загружаем модель
 model = cb.CatBoostClassifier()
 try:
-    model.load_model('/content/esp_failure_model_multi.cbm')
+    model.load_model('esp_failure_model_multi.cbm')
 except Exception as e:
     st.error(f"Ошибка загрузки модели: {e}")
     st.stop()
